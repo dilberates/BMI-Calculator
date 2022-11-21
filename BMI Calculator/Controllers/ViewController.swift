@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         print(kilo)
         let bmi = kilo/(boy*boy)
         print(bmi)
+        
+        let seconVC=SecondViewContoller()
+        self.present(seconVC, animated: true, completion: nil)
+        
     }
     
 }

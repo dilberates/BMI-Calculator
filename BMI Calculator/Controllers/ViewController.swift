@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         print(bmi)
         
         let seconVC=SecondViewContoller()
+        
+        seconVC.bmiValue=String(format:"%.1f",bmi)
         self.present(seconVC, animated: true, completion: nil)
         
     }

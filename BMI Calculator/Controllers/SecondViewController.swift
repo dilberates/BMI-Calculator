@@ -8,14 +8,18 @@
 import UIKit
 
 class SecondViewContoller:UIViewController{
+    
+    var bmiValue="0.0"
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         view.backgroundColor = .black //UIColor.green de denilebilirdiç.
         
         
         let label=UILabel()
-        label.text="DİLBER ENESİ ÇOK SEVİYOR"
+        label.text=bmiValue
         label.frame=CGRect(x: 0, y: 0, width: 400, height: 50)
         view.addSubview(label)
         //View e oluşturduğumuz labelı koymaya yarar.
